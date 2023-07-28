@@ -1,9 +1,6 @@
  ---
  ---
- /* Add your custom style here */
- @import "portfolYOU";
-
-.post.card {
+ .post.card {
   border-radius: $rounded-borders;
   text-decoration: none !important;
   margin: 10px auto;
@@ -27,5 +24,8 @@
     color: white !important;
   }
 }
+ @import "portfolYOU";
+
+
 
 
