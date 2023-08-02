@@ -1,0 +1,57 @@
+
+<div class="card-columns m-3 mt-5">
+
+  <!-- Remote Projects -->
+  {% for remote_project in page.remote_projects %}
+
+    {%- for repo in site.github.public_repositories -%}
+
+      {%- if remote_project == repo.name -%}
+
+        {%- assign project = repo -%}
+        {%- assign words = project.name | split: '-' -%}
+        
+        {%- capture titlecase -%}
+          {%- for word in words -%}
+            {{ word | capitalize | append: ' ' }}
+          {%- endfor -%}
+        {%- endcapture -%}
+
+        {%- assign project_type  = "remote" -%}
+        {%- assign project_id    = project.name -%}
+        {%- assign project_img   = false -%}
+        {%- assign project_name  = titlecase | strip -%}
+        {%- assign project_desc  = project.description -%}
+        {%- assign project_url   = project.html_url -%}
+        {%- assign project_tools = project.topics -%}
+        {%- assign external      = true -%}
+
+      {%- endif -%}
+
+    {%- endfor -%}
+
+  {% endfor %}
+
+  <!-- Local Projects -->
+  {% for post in site.posts %}
+
+    {%- assign post_type  = "local" -%}
+    {%- assign post_id    = post.name | slugify -%}
+    {%- assign post_img   = post.image -%}
+    {%- assign post_name  = post.name -%}
+    {%- assign post_desc  = post.description -%}
+    {%- assign post_tools = post.tools -%}
+
+    {%- if post.external_url -%}
+      {%- assign post_url = post.external_url -%}
+      {%- assign external    = true -%}
+    {%- else -%}
+      {%- assign post_url = post.url | relative_url -%}
+      {%- assign external    = false -%}
+    {%- endif -%}
+
+    {% include blog/post-card.html %}
+
+  {% endfor %}
+
+</div>
