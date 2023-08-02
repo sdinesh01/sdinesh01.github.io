@@ -27,8 +27,8 @@
     
 <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
   <a href="{{ post_url }}" class="post card {{ card_style }}" {%- if post.external_url and site.open_new_tab -%} target="_blank" {%- endif -%}>
-    {%- if project_img -%}
-    <img id="{{ project_id }}-img" class="card-img-top" src="{{ project_img }}" alt="{{ project_name }}" />
+    {%- if post_img -%}
+    <img id="{{ post_id }}-img" class="card-img-top" src="{{ post_img }}" alt="{{ post_name }}" />
     {%- endif -%}
     <div class="card-body {{ text_style }}">
       <h3 class="card-title">{{ post.title }}</h3>
