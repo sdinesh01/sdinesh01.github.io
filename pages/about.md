@@ -12,7 +12,6 @@ I'm graduating this spring (2024) from William & Mary with a degree in data scie
 
 I'm currently thinking about data journalism as a policy and accountability tool, and I'm excited to work on my front-end development and project management skills. 
 
-</div>
 <div class="row">
 {% include about/timeline.html %}
 </div>
