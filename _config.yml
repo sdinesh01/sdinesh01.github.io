@@ -1,9 +1,8 @@
 ### Site Settings ###
 title               : Shradha Dinesh
 description         : >-
-                    I turn coffee :coffee: into code,
-                    use tabs over spaces
-                    and never broke production.
+                    I find stories in data and
+                    visualize them.
 baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : sdinesh01/sdinesh01.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 remote_theme        : YoussefRaafatNasry/portfolYOU
@@ -28,7 +27,7 @@ author:
   image             : https://media.licdn.com/dms/image/D4D03AQGYPjrTjBu1XA/profile-displayphoto-shrink_800_800/0/1680812831270?e=2147483647&v=beta&t=i3jlaULZ9IdQq8hEr6Oc9l13QlnRVEhonb3r1KYX3-8
 # behance           : your_username
 # dribbble          : your_username
-  email             : username@domain.com
+  email             : sdinesh01@wm.edu
 # facebook         : your_username
   github            : sdinesh01
 # gitlab            : your_username
