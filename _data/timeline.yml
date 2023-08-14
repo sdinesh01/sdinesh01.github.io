@@ -1,17 +1,32 @@
-- title: Student, Harvard CS
-  from: 2014
-  to: 2018
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- title: Data Journalism Intern, Pew Research Center
+  from: June 2023
+  to: August 2023
+  description: •	Researched and wrote data-driven posts covering topics including internet, global politics, labor, and lifestyle for the Center’s data journalism blog, Short Reads
+               •	Fact checked researchers’ blog posts using the Center’s rigorous number checking process
+               •	Designed data visualizations for researchers’ posts using Adobe Illustrator and Basecamp for project management
+               •	Wrote Tweets for the Center’s main and topic-specific accounts and produced the team’s newsletter on MailChimp
 
-- title: Software Engineer, Google, UK
-  from: 2018
+
+- title: Co-Director, DisinfoLab (a student-run think tank with W&M’s Global Research Institute )
+  from: May 2023
   to: present
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  description: •	Mentor qualitative and technical research teams through rigorous research design in topics in mis/disinformation,  technology, and politics; guide the production of research op-eds/reports through rounds of editing; and pitch our reporting to various publications
+               •	Identify opportunities to increase lab funding and publicity through grants and student-produced software
+               •	Collaborate with college faculty and community stakeholders to support the lab’s expansion
+
+- title: Disinformation analyst, DisinfoLab
+  from: 2022
+  to: 2023
+  description: •	Published a report in Diplomatic Courier on the state of disinformation in Eastern Europe, which was viewed 6,600 times across 26 countries (spring 2022). This project combined an analysis of Facebook comments with policy research to compare information literacy in three nations.
+               •	Fall 2022 | mentored new analysts through a research op-ed on the influence of national PACs in 2022 school board elections by supporting methodological development, journalistic writing, and editing (published with DC)
+
+- title: Associate Data Editor, The Flat Hat (campus newspaper)
+  from: 2023
+  to: present
+  description: •	Pitch & write data stories; source campus, local, and national data sets & documentation; data processing and analysis; and data visualization (Datawrapper)
+
+- title: Student Assistant, Earl Gregg Swem Library Special Collections
+  from: 2023
+  to: present
+  description: •	Research assistance, shelving, paging, and front desk service for collections patrons (AEON Client database)
+
