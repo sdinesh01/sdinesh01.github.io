@@ -8,13 +8,15 @@ weight: 1
 # **About Me**
 
 Hi I'm **Shradha Dinesh** :wave:,<br>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+I'm graduating this spring (2024) from William & Mary with a degree in data science (concentration in geospatial analysis) and political journalism (a self-designed major -- ask me what that means!). I'm passionate about producing journalism with data through visualizations, ML/NLP analyses, or your everyday Excel number crunch. 
 
-<div class="row">
+I'm currently thinking about data journalism as a policy and accountability tool, and I'm excited to work on my front-end development and project management skills. 
+
+<!--><div class="row">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
 {% include about/skills.html title="Other Skills" source=site.data.other-skills %}
 </div>
-
+<-->
 <div class="row">
 {% include about/timeline.html %}
 </div>
