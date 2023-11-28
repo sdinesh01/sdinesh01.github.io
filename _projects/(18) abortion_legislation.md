@@ -9,4 +9,6 @@ I'm still building out this page! For now, here are the sources I used to create
 1. [Center for Reproductive Rights](https://reproductiverights.org/maps/abortion-laws-by-state/)
 2. [KFF](https://www.kff.org/other/state-indicator/abortion-policy-tracker/currentTimeframe=0&sortModel=%7B%22colId%22:%22Status%20of%20Abortion%22,%22sort%22:%22asc%22%7D)
 
-<img src="https://github.com/sdinesh01/sdinesh01.github.io/blob/master/_images/govt390_reproviz.jpg" alt="drawing" width="1000"/>
+[View the full-size graphic here](https://github.com/sdinesh01/sdinesh01.github.io/blob/master/_images/govt390_reproviz.jpg)
+
+<img src="https://github.com/sdinesh01/sdinesh01.github.io/blob/master/_images/govt390_reproviz.jpg" alt="drawing" width="500"/>
