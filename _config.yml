@@ -3,7 +3,7 @@ title               : Shradha Dinesh
 description         : >-
                     I find stories in data and
                     visualize them.
-URL                 : 'https://sdinesh01.github.io/'
+url                 : 'https://sdinesh01.github.io/'
 baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : sdinesh01/sdinesh01.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 remote_theme        : YoussefRaafatNasry/portfolYOU
