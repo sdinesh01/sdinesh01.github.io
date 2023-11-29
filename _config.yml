@@ -56,6 +56,10 @@ collections:
     output: true
     permalink: /projects/:name
 
+  fun: 
+    output: true
+    permalink: /other-projects/:name
+
 
 ### Disqus ###
 #disqus:
