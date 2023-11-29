@@ -11,4 +11,4 @@ I'm still building out this page! For now, here are the sources I used to create
 
 [View the full-size graphic here](https://github.com/sdinesh01/sdinesh01.github.io/blob/master)
 
-<img src="{{ "/assets/images/govt390_reproviz.jpg" | prepend: site.baseurl | prepend: site.url}}" alt="Untitled" />
+<img src="/assets/images/govt390_reproviz.jpg" alt="">
