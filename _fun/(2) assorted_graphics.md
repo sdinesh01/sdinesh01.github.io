@@ -1,7 +1,7 @@
 ---
 name: A running list of assorted graphic elements I've designed
 tools: [Adobe Illustrator, Photoshop]
-image: 
+image: https://github.com/sdinesh01/sdinesh01.github.io/blob/master/_images/gender_powerArtboard%202.png?raw=true
 description: Some pieces I've created on quick turnarounds for print and gallery-style displays.
 ---
 
