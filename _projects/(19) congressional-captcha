@@ -1,0 +1,7 @@
+---
+name: Congressional Captcha (a work in progress)
+tools: [Python, streamlit, Apache Tika, spaCy, NLP]
+image: https://github.com/sdinesh01/congressional-captcha-2/blob/main/main-app-Streamlit%20(2).gif?raw=true
+description: Building a webapp to analyze text similarity between state and federal legislation and "model legislation" developed by interest groups.
+external_url: https://github.com/sdinesh01/congressional-captcha-2
+---
