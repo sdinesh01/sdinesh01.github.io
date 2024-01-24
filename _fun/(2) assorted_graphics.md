@@ -9,4 +9,4 @@ carousels:
     - image: https://github.com/sdinesh01/sdinesh01.github.io/blob/master/_images/gender_powerArtboard%201.png?raw=true
 ---
 
-{% include elements/carousel.html height="50" unit="%" number="1" %}
+{% include elements/carousel.html height="500" unit="px" number="1" %}
