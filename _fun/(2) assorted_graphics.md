@@ -9,4 +9,4 @@ description: Some pieces I've created on quick turnarounds for print and gallery
 https://github.com/sdinesh01/sdinesh01.github.io/blob/master/_images/allsnow3Artboard%201.png?raw=true
 https://github.com/sdinesh01/sdinesh01.github.io/blob/master/_images/gender_powerArtboard%201.png?raw=true
 {% endcapture %}
-{% include _elements/carousel.html %}
+{% include elements/carousel.html %}
