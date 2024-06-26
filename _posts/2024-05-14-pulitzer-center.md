@@ -1,5 +1,5 @@
 ---
-title: 'How do you stop the ocean?' Climate Change at Norfolk's Doorsteps
+title: "How do you stop the ocean?" Climate Change at Norfolk's Doorsteps
 tags: [Pulitzer Center, Journalism, Data]
 image: https://pulitzercenter.org/sites/default/files/styles/orig_optimized/public/inline-images/IMG_2398.jpg.webp?itok=Y8zvbThs
 description: Climate journalism produced for the Sharp Journalism Seminar at William & Mary
