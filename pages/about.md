@@ -9,7 +9,9 @@ weight: 1
 
 Hi I'm **Shradha Dinesh** :wave:,<be>
 
-I'm passionate about producing journalism with data and graphics. I recently graduated from William & Mary with a B.S. in data science (concentration in spatial data analysis) and political journalism (a self-designed major). I'm looking for my next gig as a journalist-developer in a newsroom passionate about expanding data coverage to all beats and finding creative ways to make data and data literacy accessible to reporters and readers.
+I'm passionate about producing journalism with data and graphics. I recently graduated from William & Mary with a B.S. in data science (concentration in spatial data analysis) and political journalism (a self-designed major). 
+
+*I'm looking for my next gig as a journalist-developer in a newsroom passionate about expanding data coverage to all beats and finding creative ways to make data and data literacy accessible to reporters and readers.*
 
 I'm interested in data as a source for accountability journalism, focusing on creating original datasets/databases and analyses with statistics/machine learning, remotely sensed data, and data visualization.
 
