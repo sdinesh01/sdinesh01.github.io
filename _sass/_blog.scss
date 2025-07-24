@@ -19,10 +19,9 @@
     padding: 15px 35px;
   }
   
-  &:hover {
+  &:hover:not(.post) {
     transform: translateY(-8px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-    text-decoration: none !important;
+    box-shadow: -2px 8px 40px -12px rgba(0, 0, 0, 0.24);
   }
 }
 
@@ -119,11 +118,4 @@
 .card-footer {
   padding: 0.5rem 0.75rem;
   font-size: 0.8rem;
-}
-
-/* HOVER TEST - target the wrapper */
-.wow.animated.fadeIn:hover a.post.card {
-  background-color: red !important;
-  transform: translateY(-10px) !important;
-  transition: all 0.3s ease !important;
 }
