@@ -116,25 +116,18 @@
   font-size: 0.8rem;
 }
 
-/* Card hover effect - more specific */
+/* Remove all existing shadows first */
+.post.card,
+a.post.card,
 a.hover-card {
+  box-shadow: none !important;
   transition: all 0.3s ease;
   transform: translateY(0);
-  box-shadow: none; /* Remove any existing shadow */
-  
-  &:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
-    text-decoration: none !important;
-  }
 }
 
-/* Also target the wrapper if needed */
-.wow.animated.fadeIn a.hover-card {
-  box-shadow: none;
-  
-  &:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
-  }
+/* Apply hover effect only on hover */
+a.hover-card:hover,
+.wow.animated.fadeIn a.hover-card:hover {
+  transform: translateY(-8px) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
 }
