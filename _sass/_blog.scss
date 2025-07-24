@@ -123,6 +123,11 @@ a.post.card:hover {
   font-size: 0.9rem;
 }
 
+/* Test if CSS is loading */
+body {
+  border: 10px solid red !important;
+}
+
 .card-footer {
   padding: 0.5rem 0.75rem;
   font-size: 0.8rem;
