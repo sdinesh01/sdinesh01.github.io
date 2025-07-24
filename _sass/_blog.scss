@@ -121,8 +121,8 @@
   font-size: 0.8rem;
 }
 
-/* HOVER TEST - targeting exact classes from inspect */
-a.post.card.border:hover {
+/* HOVER TEST - more specific */
+.wow.animated.fadeIn a.post.card:hover {
   background-color: red !important;
   transform: translateY(-10px) !important;
   transition: all 0.3s ease !important;
