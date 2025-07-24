@@ -116,14 +116,25 @@
   font-size: 0.8rem;
 }
 
-/* Card hover effect */
-.hover-card {
+/* Card hover effect - more specific */
+a.hover-card {
   transition: all 0.3s ease;
   transform: translateY(0);
+  box-shadow: none; /* Remove any existing shadow */
   
   &:hover {
     transform: translateY(-8px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
     text-decoration: none !important;
+  }
+}
+
+/* Also target the wrapper if needed */
+.wow.animated.fadeIn a.hover-card {
+  box-shadow: none;
+  
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
   }
 }
