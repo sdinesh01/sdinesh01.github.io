@@ -2,12 +2,37 @@
 ---
 @import "portfolYOU";
 
+// .post.card {
+//   border-radius: $rounded-borders;
+//   text-decoration: none !important;
+//   padding: 15px;
+//   height: 100%;
+//   transition: all 0.3s ease;
+//   transform: translateY(0);
+  
+//   .card-img-top {
+//     border-radius: $rounded-borders $rounded-borders 0 0;
+//   }
+//   .card-footer {
+//     font-size: 14px;
+//     margin: 0 -15px -15px -15px;
+//     padding: 15px 35px;
+//   }
+  
+//   transition: transform 400ms;
+
+//   &:hover {
+//     transform: translateY(-8px);
+//     box-shadow: -2px 8px 40px -12px rgba(0, 0, 0, 0.24);
+//   }
+// }
+
 .post.card {
   border-radius: $rounded-borders;
   text-decoration: none !important;
   padding: 15px;
   height: 100%;
-  transition: all 0.3s ease;
+  transition: transform 400ms ease, box-shadow 400ms ease;
   transform: translateY(0);
   
   .card-img-top {
@@ -18,12 +43,11 @@
     margin: 0 -15px -15px -15px;
     padding: 15px 35px;
   }
-  
-  transition: transform 400ms;
 
   &:hover {
-    transform: translateY(-8px);
-    box-shadow: -2px 8px 40px -12px rgba(0, 0, 0, 0.24);
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    z-index: 10;
   }
 }
 .post-metadata {
