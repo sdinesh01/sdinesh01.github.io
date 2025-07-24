@@ -106,7 +106,7 @@
 
 {%- comment -%} Add featured card styling {%- endcomment -%}
 {%- if is_featured -%}
-{%- assign card_style = card_style | append: ' featured-card shadow-lg' -%}
+  {%- assign card_style = card_style | append: ' featured-card shadow-lg' -%}
 {%- endif -%}
 
 {%- comment -%} Determine Post URL {%- endcomment -%}
@@ -117,7 +117,7 @@
 {%- endif -%}
 
 <div class="wow animated fadeIn" data-wow-delay=".15s">
-  <a href="{{ post_url }}" class="post card {{ card_style }} h-100 text-decoration-none" {%- if post.external_url and site.open_new_tab -%} target="_blank" {%- endif -%}>
+  <a href="{{ post_url }}" class="post card {{ card_style }} h-100 text-decoration-none hover-card" {%- if post.external_url and site.open_new_tab -%} target="_blank" {%- endif -%}>
     {%- if post_img -%}
     <img id="{{ post_id }}-img" class="card-img-top" src="{{ post_img }}" alt="{{ post_name }}" />
     {%- endif -%}
@@ -141,4 +141,3 @@
     </div>
   </a>
 </div>
-
