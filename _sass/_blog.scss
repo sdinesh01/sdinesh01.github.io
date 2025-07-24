@@ -130,7 +130,11 @@ a.post.card:hover {
   font-size: 0.8rem;
 }
 
-/* BASIC TEST - This should definitely work */
-a:hover {
+/* Test if pointer events are blocked */
+a.post.card {
+  pointer-events: auto !important;
+}
+
+a.post.card:hover {
   background-color: yellow !important;
 }
