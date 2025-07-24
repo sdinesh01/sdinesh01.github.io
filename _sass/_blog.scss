@@ -130,8 +130,8 @@ a.post.card:hover {
   font-size: 0.8rem;
 }
 
-/* Very specific targeting */
-div.wow > a[class*="post"]:hover {
+/* Make everything hoverable */
+*:hover {
   background-color: yellow !important;
-  transform: translateY(-3px) !important;
+  outline: 2px solid red !important;
 }
