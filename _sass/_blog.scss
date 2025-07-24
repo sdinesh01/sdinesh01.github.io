@@ -125,9 +125,7 @@ a.hover-card {
   transform: translateY(0);
 }
 
-/* Apply hover effect only on hover */
-a.hover-card:hover,
-.wow.animated.fadeIn a.hover-card:hover {
-  transform: translateY(-8px) !important;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+/* Simple test - this should definitely work */
+a.hover-card:hover {
+  background-color: lightblue !important;
 }
