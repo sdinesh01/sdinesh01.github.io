@@ -19,10 +19,6 @@
     padding: 15px 35px;
   }
   
-  &:hover{
-    transform: translateY(-8px);
-    box-shadow: -2px 8px 40px -12px rgba(0, 0, 0, 0.24);
-  }
 }
 
 .post-metadata {
@@ -118,4 +114,16 @@
 .card-footer {
   padding: 0.5rem 0.75rem;
   font-size: 0.8rem;
+}
+
+/* Card hover effect */
+.hover-card {
+  transition: all 0.3s ease;
+  transform: translateY(0);
+  
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    text-decoration: none !important;
+  }
 }
