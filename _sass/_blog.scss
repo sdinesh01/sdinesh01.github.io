@@ -18,15 +18,13 @@
 }
 
 /* HOVER EFFECTS - Must come after .post.card */
-a.post.card.border.h-100:hover {
-  transform: translateY(-3px) !important;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1) !important;
+/* Most basic hover test possible */
+a {
+  background-color: white;
 }
 
-/* For featured cards */
-a.post.card.featured-card:hover {
-  transform: scale(1.05) translateY(-3px) !important;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.15) !important;
+a:hover {
+  background-color: red !important;
 }
 
 /* Clean up any link styles */
@@ -128,10 +126,4 @@ a.post.card:hover {
 .card-footer {
   padding: 0.5rem 0.75rem;
   font-size: 0.8rem;
-}
-
-/* Make everything hoverable */
-*:hover {
-  background-color: yellow !important;
-  outline: 2px solid red !important;
 }
