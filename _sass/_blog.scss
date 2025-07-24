@@ -18,22 +18,21 @@
 }
 
 /* HOVER EFFECTS - Must come after .post.card */
-a.post.card {
-  transition: all 0.3s ease;
-  text-decoration: none !important;
-  color: inherit;
+a.post.card.border.h-100:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1) !important;
 }
 
-a.post.card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  text-decoration: none !important;
-  color: inherit;
-}
-
-/* Featured card specific hover */
+/* For featured cards */
 a.post.card.featured-card:hover {
-  transform: scale(1.05) translateY(-3px);
+  transform: scale(1.05) translateY(-3px) !important;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15) !important;
+}
+
+/* Clean up any link styles */
+a.post.card:hover {
+  text-decoration: none !important;
+  color: inherit !important;
 }
 
 .post-metadata {
