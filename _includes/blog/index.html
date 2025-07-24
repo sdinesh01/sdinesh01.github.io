@@ -62,8 +62,8 @@
 <!-- Featured posts at the top -->
 <div class="container my-4">
   <div class="row">
-    {% for post in sorted_posts limit:2 %}
-      <div class="col-12 mb-4">
+    {% for post in sorted_posts limit:3 %}
+      <div class="col-md-4 mb-4">
         {%- assign post_type  = "local" -%}
         {%- assign post_id    = post.name | slugify -%}
         {%- assign post_img   = post.image -%}
@@ -87,7 +87,7 @@
 
 <!-- Remaining posts in masonry layout -->
 <div class="card-columns m-3 mt-5">
-  {% for post in sorted_posts offset:2 %}
+  {% for post in sorted_posts offset:3 %}
     {%- assign post_type  = "local" -%}
     {%- assign post_id    = post.name | slugify -%}
     {%- assign post_img   = post.image -%}
@@ -106,6 +106,7 @@
     {% include blog/post-card.html %}
   {% endfor %}
 </div>
+
 
 
 
