@@ -116,23 +116,4 @@
   font-size: 0.8rem;
 }
 
-/* Override shadows.scss - be very specific */
-.wow.animated.fadeIn a.post.card.hover-card {
-  box-shadow: none !important;
-  transition: all 0.3s ease !important;
-  transform: translateY(0) !important;
-}
-
-.wow.animated.fadeIn a.post.card.hover-card:hover {
-  transform: translateY(-8px) !important;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
-}
-
-/* Also override any featured card shadows */
-.featured-card.shadow-lg {
-  box-shadow: none !important;
-}
-
-.featured-card.shadow-lg:hover {
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
-}
+* { box-shadow: none !important; }
