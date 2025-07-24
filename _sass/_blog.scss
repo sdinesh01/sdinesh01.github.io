@@ -130,7 +130,7 @@ a.post.card:hover {
   font-size: 0.8rem;
 }
 
-/* Test hover on the wrapper div instead */
-div.wow:hover {
-  background-color: yellow !important;
+/* Make any overlays visible */
+* {
+  outline: 1px solid red !important;
 }
