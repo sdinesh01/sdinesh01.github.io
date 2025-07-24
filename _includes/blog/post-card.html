@@ -1,3 +1,7 @@
+{%- if is_featured -%}
+  {%- assign card_style = card_style | append: ' featured-card shadow-lg' -%}
+{%- endif -%}
+
 {%- comment -%} Default Styles {%- endcomment -%}
 {%- assign card_style  = '' -%}
 {%- assign text_style  = 'text-themed' -%}
