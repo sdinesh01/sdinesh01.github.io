@@ -18,19 +18,15 @@
 }
 
 /* HOVER EFFECTS - Must come after .post.card */
-/* Most basic hover test possible */
-a {
-  background-color: white;
+.post-card-hover {
+  transition: all 0.3s ease;
+  transform: scale(1);
 }
 
-a:hover {
-  background-color: red !important;
-}
-
-/* Clean up any link styles */
-a.post.card:hover {
-  text-decoration: none !important;
-  color: inherit !important;
+.post-card-hover:hover {
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  z-index: 10;
 }
 
 .post-metadata {
@@ -121,11 +117,6 @@ a.post.card:hover {
 .card-text {
   margin-bottom: 0.5rem;
   font-size: 0.9rem;
-}
-
-/* Test if CSS is loading */
-body {
-  border: 10px solid red !important;
 }
 
 .card-footer {
