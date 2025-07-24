@@ -33,7 +33,9 @@
   {% endfor %}
 
   <!-- Local Projects -->
-  {% for post in site.posts %}
+<!--   {% for post in site.posts %} -->
+  {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
+  {% for post in sorted_posts %}
 
     {%- assign post_type  = "local" -%}
     {%- assign post_id    = post.name | slugify -%}
