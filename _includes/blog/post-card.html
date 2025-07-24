@@ -28,10 +28,10 @@
 {%- else -%}
   {%- assign post_url = post.url | relative_url -%}
 {%- endif -%}
-    
-<!--<div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">-->
-  <div class="wow animated fadeIn" data-wow-delay=".15s">
-  <a href="{{ post_url }}" class="post card {{ card_style }}" {%- if post.external_url and site.open_new_tab -%} target="_blank" {%- endif -%}>
+
+<div class="wow animated fadeIn" data-wow-delay=".15s">
+  <a href="{{ post_url }}" class="post card {{ card_style }} h-100 text-decoration-none" {%- if post.external_url and site.open_new_tab -%} target="_blank" {%- endif -%}
+     style="transition: all 0.3s ease;">
     {%- if post_img -%}
     <img id="{{ post_id }}-img" class="card-img-top" src="{{ post_img }}" alt="{{ post_name }}" />
     {%- endif -%}
@@ -55,3 +55,31 @@
     </div>
   </a>
 </div>
+
+    
+<!--<div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">-->
+<!--   <div class="wow animated fadeIn" data-wow-delay=".15s">
+  <a href="{{ post_url }}" class="post card {{ card_style }}" {%- if post.external_url and site.open_new_tab -%} target="_blank" {%- endif -%}>
+    {%- if post_img -%}
+    <img id="{{ post_id }}-img" class="card-img-top" src="{{ post_img }}" alt="{{ post_name }}" />
+    {%- endif -%}
+    <div class="card-body {{ text_style }}">
+      <h5 class="card-title">{{ post.title }}</h5>
+      <p class="card-text">
+        {% for tag in post.tags %}
+        <span class="badge {{ badge_style }}">{{ tag }}</span>
+        {% endfor %}
+      </p>
+      <p class="card-text">
+        {%- if post.description -%}
+        {{ post.description | truncatewords: 25, "<small><i>  read more...</i></small>" }}
+        {%- else -%}
+        {{ post.content | truncatewords: 25, "<small><i>  read more...</i></small>" }}
+        {%- endif -%}
+      </p>
+    </div>
+    <div class="card-footer {{ text_style }}">
+      {{ post.date | date_to_long_string }}
+    </div>
+  </a>
+</div> -->
