@@ -2,9 +2,11 @@
 
 <!-- Featured posts at the top -->
 <div class="container my-4">
-  <div class="row">
+  <h2 class="text-center mb-4 text-primary">Latest stories</h2>
+  <div class="row featured-section p-4 mb-5 bg-light rounded">
     {% for post in sorted_posts limit:3 %}
       <div class="col-md-4 mb-4">
+        {%- assign is_featured = true -%}
         {%- assign post_type  = "local" -%}
         {%- assign post_id    = post.name | slugify -%}
         {%- assign post_img   = post.image -%}
@@ -26,8 +28,39 @@
   </div>
 </div>
 
+<!-- Remaining posts -->
+<div class="container">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h3 class="text-muted">More Stories</h3>
+    <small class="text-muted">{{ sorted_posts.size | minus: 3 }} articles</small>
+  </div>
+  
+  <div class="row">
+    {% for post in sorted_posts offset:3 %}
+      <div class="col-md-6 col-lg-4 mb-4">
+        {%- assign post_type  = "local" -%}
+        {%- assign post_id    = post.name | slugify -%}
+        {%- assign post_img   = post.image -%}
+        {%- assign post_name  = post.name -%}
+        {%- assign post_desc  = post.description -%}
+        {%- assign post_tools = post.tools -%}
+    
+        {%- if post.external_url -%}
+          {%- assign post_url = post.external_url -%}
+          {%- assign external    = true -%}
+        {%- else -%}
+          {%- assign post_url = post.url | relative_url -%}
+          {%- assign external    = false -%}
+        {%- endif -%}
+        {% include blog/post-card.html %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+
 <!-- Remaining posts in masonry layout -->
-<div class="card-columns m-3 mt-5">
+<!-- <div class="card-columns m-3 mt-5">
   {% for post in sorted_posts offset:3 %}
     {%- assign post_type  = "local" -%}
     {%- assign post_id    = post.name | slugify -%}
@@ -46,7 +79,7 @@
 
     {% include blog/post-card.html %}
   {% endfor %}
-</div>
+</div> -->
 
 
 
