@@ -27,9 +27,11 @@
   }
 }
 
+/* Featured posts styling */
 .featured-section {
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   border-left: 4px solid #007bff;
+  padding: 2rem !important;
 }
 
 .featured-card {
@@ -37,14 +39,57 @@
   border: 2px solid #007bff !important;
 }
 
-.featured-card:hover {
-  transform: scale(1.05);
+/* Fix hover effects - target the <a> tag that wraps the card */
+a.post.card {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+a.post.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Featured card specific hover */
+a.post.card.featured-card:hover {
+  transform: scale(1.05) translateY(-3px);
   transition: transform 0.3s ease;
 }
 
-.post.card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+/* Fix card heights and spacing */
+.featured-section .col-md-4 {
+  display: flex;
+}
+
+.featured-section .card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.featured-section .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.featured-section .card-text:last-of-type {
+  flex-grow: 1;
+}
+
+/* Better image sizing */
+.featured-section .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Better spacing for tags */
+.card-text .badge {
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
 .card-columns .card {
