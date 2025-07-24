@@ -7,6 +7,9 @@
   text-decoration: none !important;
   padding: 15px;
   height: 100%;
+  transition: all 0.3s ease;
+  transform: translateY(0);
+  
   .card-img-top {
     border-radius: $rounded-borders $rounded-borders 0 0;
   }
@@ -15,18 +18,12 @@
     margin: 0 -15px -15px -15px;
     padding: 15px 35px;
   }
-}
-
-/* HOVER EFFECTS - Must come after .post.card */
-.post-card-hover {
-  transition: all 0.3s ease;
-  transform: scale(1);
-}
-
-.post-card-hover:hover {
-  transform: scale(1.05) translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-  z-index: 10;
+  
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    text-decoration: none !important;
+  }
 }
 
 .post-metadata {
