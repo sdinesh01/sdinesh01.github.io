@@ -2,8 +2,7 @@
  ---
  @import "portfolYOU";
 
-a.post.card:hover {
-  transform: translateY(-3px) !important;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1) !important;
-  transition: all 0.3s ease !important;
+/* Your custom CSS goes here */
+body {
+  border: 10px solid red !important; /* Test first */
 }
