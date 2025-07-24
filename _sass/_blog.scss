@@ -116,4 +116,21 @@
   font-size: 0.8rem;
 }
 
-* { box-shadow: none !important; }
+/* Override the specific shadow-lg class */
+.shadow-lg,
+.card.shadow-lg,
+.post.card.shadow-lg,
+a.post.card.shadow-lg {
+  box-shadow: none !important;
+}
+
+/* Add hover effect */
+a.hover-card {
+  transition: all 0.3s ease !important;
+  transform: translateY(0) !important;
+}
+
+a.hover-card:hover {
+  transform: translateY(-8px) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+}
