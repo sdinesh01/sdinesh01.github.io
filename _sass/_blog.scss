@@ -26,3 +26,18 @@
     color: white !important;
   }
 }
+
+.featured-section {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-left: 4px solid #007bff;
+}
+
+.featured-card {
+  transform: scale(1.02);
+  border: 2px solid #007bff !important;
+}
+
+.featured-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
