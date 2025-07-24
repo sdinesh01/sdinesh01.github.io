@@ -7,7 +7,6 @@
   text-decoration: none !important;
   padding: 15px;
   height: 100%;
-
   .card-img-top {
     border-radius: $rounded-borders $rounded-borders 0 0;
   }
@@ -17,10 +16,29 @@
     padding: 15px 35px;
   }
 }
+
+/* HOVER EFFECTS - Must come after .post.card */
+a.post.card {
+  transition: all 0.3s ease;
+  text-decoration: none !important;
+  color: inherit;
+}
+
+a.post.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-decoration: none !important;
+  color: inherit;
+}
+
+/* Featured card specific hover */
+a.post.card.featured-card:hover {
+  transform: scale(1.05) translateY(-3px);
+}
+
 .post-metadata {
   font-size: 14px;
   margin-top: -6px;
-
   .tag:hover {
     background-color: $primary;
     color: white !important;
@@ -36,8 +54,8 @@
 .featured-section {
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   border-left: 4px solid #007bff;
-  padding: 1rem !important; /* Reduced from 2rem */
-  margin-bottom: 2rem !important; /* Reduced gap */
+  padding: 1rem !important;
+  margin-bottom: 2rem !important;
 }
 
 .featured-card {
@@ -45,28 +63,6 @@
   border: 2px solid #007bff !important;
 }
 
-/* Fix hover effects - target the <a> tag that wraps the card */
-/* More specific hover targeting */
-.post.card,
-a.post.card,
-.card.post {
-  transition: all 0.3s ease;
-  text-decoration: none !important;
-}
-
-.post.card:hover,
-a.post.card:hover,
-.card.post:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  text-decoration: none !important;
-}
-
-/* Override any Bootstrap link styles */
-a.card:hover {
-  color: inherit !important;
-  text-decoration: none !important;
-}
 /* Fix card heights and spacing */
 .featured-section .col-md-4 {
   display: flex;
@@ -95,11 +91,12 @@ a.card:hover {
 
 /* Better image sizing */
 .featured-section .card-img-top {
-  height: 150px; /* Reduced from 200px */
+  height: 150px;
   object-fit: cover;
 }
+
 .card-img-top {
-  height: 120px; /* For regular cards */
+  height: 120px;
   object-fit: cover;
 }
 
@@ -115,7 +112,7 @@ a.card:hover {
 
 /* Reduce text spacing */
 .card-body {
-  padding: 0.75rem; /* Reduced from default 1.25rem */
+  padding: 0.75rem;
 }
 
 .card-title {
