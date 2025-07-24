@@ -106,7 +106,8 @@
 
 {%- comment -%} Add featured card styling {%- endcomment -%}
 {%- if is_featured -%}
-  {%- assign card_style = card_style | append: ' featured-card shadow-lg' -%}
+<!--   {%- assign card_style = card_style | append: ' featured-card shadow-lg' -%} -->
+  {%- assign card_style = card_style | append: ' featured-card' -%}
 {%- endif -%}
 
 {%- comment -%} Determine Post URL {%- endcomment -%}
