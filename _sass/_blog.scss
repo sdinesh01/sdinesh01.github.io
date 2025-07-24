@@ -116,16 +116,23 @@
   font-size: 0.8rem;
 }
 
-/* Remove all existing shadows first */
-.post.card,
-a.post.card,
-a.hover-card {
+/* Override shadows.scss - be very specific */
+.wow.animated.fadeIn a.post.card.hover-card {
   box-shadow: none !important;
-  transition: all 0.3s ease;
-  transform: translateY(0);
+  transition: all 0.3s ease !important;
+  transform: translateY(0) !important;
 }
 
-/* Simple test - this should definitely work */
-a.hover-card:hover {
-  background-color: lightblue !important;
+.wow.animated.fadeIn a.post.card.hover-card:hover {
+  transform: translateY(-8px) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Also override any featured card shadows */
+.featured-card.shadow-lg {
+  box-shadow: none !important;
+}
+
+.featured-card.shadow-lg:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
 }
