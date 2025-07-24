@@ -33,9 +33,7 @@
   {% endfor %}
 
   <!-- Local Projects -->
-<!--   {% for post in site.posts %} -->
-  {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
-  {% for post in sorted_posts %}
+<!--   {% for post in site.posts %}
 
     {%- assign post_type  = "local" -%}
     {%- assign post_id    = post.name | slugify -%}
@@ -52,6 +50,28 @@
       {%- assign external    = false -%}
     {%- endif -%}
 
+    {% include blog/post-card.html %}
+
+  {% endfor %} -->
+
+  {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
+  {% for post in sorted_posts %}
+
+    {%- assign post_type  = "local" -%}
+    {%- assign post_id    = post.name | slugify -%}
+    {%- assign post_img   = post.image -%}
+    {%- assign post_name  = post.name -%}
+    {%- assign post_desc  = post.description -%}
+    {%- assign post_tools = post.tools -%}
+  
+    {%- if post.external_url -%}
+      {%- assign post_url = post.external_url -%}
+      {%- assign external    = true -%}
+    {%- else -%}
+      {%- assign post_url = post.url | relative_url -%}
+      {%- assign external    = false -%}
+    {%- endif -%}
+  
     {% include blog/post-card.html %}
 
   {% endfor %}
