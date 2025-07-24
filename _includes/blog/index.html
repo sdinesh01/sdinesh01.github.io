@@ -2,7 +2,7 @@
 
 <!-- Featured posts at the top -->
 <div class="container my-4">
-  <h2 class="text-left mb-3 text-primary">Latest stories</h2>
+  <h2 class="text-left mb-3 text-primary">Latest</h2>
   <div class="row featured-section p-3 mb-3 bg-light rounded">
     {% for post in sorted_posts limit:3 %}
       <div class="col-md-4 mb-4 d-flex">  <!-- Add d-flex here -->
@@ -32,7 +32,7 @@
 
 <div class="container">
   <div class="d-flex justify-content-between align-items-center mb-3">
-    <h3 class="text-muted">More Stories</h3>
+    <h3 class="text-muted">More stories</h3>
     <small class="text-muted">{{ sorted_posts.size | minus: 3 }} articles</small>
   </div>
   
