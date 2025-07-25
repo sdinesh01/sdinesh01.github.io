@@ -1,17 +1,34 @@
+// .project.card {
+//     border-radius: 15px !important;
+//     text-decoration: none !important;
+//     margin: 10px auto !important;
+//     transition: transform 400ms !important
+// }
+
+// .project.card .card-img-top {
+//     border-radius: 15px 15px 0 0
+// }
+
+// .project.card:hover:not(.post) {
+//     transform: translateY(-8px) !important;
+//     box-shadow: -2px 8px 40px -12px rgba(0,0,0,0.24) !important
+// }
+
 .project.card {
-    border-radius: 15px !important;
-    text-decoration: none !important;
-    margin: 10px auto !important;
-    transition: transform 400ms !important
-}
+  border-radius: $rounded-borders;
+  text-decoration: none !important;
+  margin: 10px auto !important;
 
-.project.card .card-img-top {
-    border-radius: 15px 15px 0 0
-}
+  .card-img-top {
+    border-radius: $rounded-borders $rounded-borders 0 0 !important;
+  }
 
-.project.card:hover:not(.post) {
+  transition: transform 400ms !important;
+
+  &:hover {
     transform: translateY(-8px) !important;
-    box-shadow: -2px 8px 40px -12px rgba(0,0,0,0.24) !important
+    box-shadow: -2px 8px 40px -12px rgba(0, 0, 0, 0.24) !important;
+  }
 }
 
 // .post-metadata {
