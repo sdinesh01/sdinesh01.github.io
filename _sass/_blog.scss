@@ -1,41 +1,17 @@
-// .card {
-//   border-radius: $rounded-borders;
-//   text-decoration: none !important;
-//   padding: 15px;
-//   height: 100%;
-//   transition: transform 400ms ease, box-shadow: 400ms ease;
-  
-//   .card-img-top {
-//     border-radius: $rounded-borders $rounded-borders 0 0;
-//   }
-//   .card-footer {
-//     font-size: 14px;
-//     margin: 0 -15px -15px -15px;
-//     padding: 15px 35px;
-//   }
-
-//   &:hover {
-//     transform: translateY(-8px) scale(1.03);
-//     box-shadow: -2px 8px 40px -12px rgba(0, 0, 0, 0.24);
-//   }
-// }
-
-// .post.card {
-//   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  
-//   &:hover {
-//     transform: translateY(-5px);
-//     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-//   }
-// }
-
 .post.card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
-  
+  border-radius: $rounded-borders;
+  text-decoration: none !important;
+  margin: 10px auto !important;
+
+  .card-img-top {
+    border-radius: $rounded-borders $rounded-borders 0 0 !important;
+  }
+
+  transition: transform 400ms !important;
+
   &:hover {
-    transform: translateY(-5px) !important;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
-    background-color: inherit !important; // Preserve original background
+    transform: translateY(-8px) !important;
+    box-shadow: -2px 8px 40px -12px rgba(0, 0, 0, 0.24) !important;
   }
 }
 
