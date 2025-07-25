@@ -1,3 +1,6 @@
+$rounded-borders: 0.25rem; // Common value for rounded corners
+$primary: #007bff;        // Common primary color (Bootstrap blue)
+
 .post.card {
   border-radius: $rounded-borders;
   text-decoration: none !important;
