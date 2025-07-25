@@ -1,22 +1,32 @@
-.card {
-  border-radius: $rounded-borders;
-  text-decoration: none !important;
-  padding: 15px;
-  height: 100%;
-  transition: transform 400ms ease, box-shadow: 400ms ease;
+// .card {
+//   border-radius: $rounded-borders;
+//   text-decoration: none !important;
+//   padding: 15px;
+//   height: 100%;
+//   transition: transform 400ms ease, box-shadow: 400ms ease;
   
-  .card-img-top {
-    border-radius: $rounded-borders $rounded-borders 0 0;
-  }
-  .card-footer {
-    font-size: 14px;
-    margin: 0 -15px -15px -15px;
-    padding: 15px 35px;
-  }
+//   .card-img-top {
+//     border-radius: $rounded-borders $rounded-borders 0 0;
+//   }
+//   .card-footer {
+//     font-size: 14px;
+//     margin: 0 -15px -15px -15px;
+//     padding: 15px 35px;
+//   }
 
+//   &:hover {
+//     transform: translateY(-8px) scale(1.03);
+//     box-shadow: -2px 8px 40px -12px rgba(0, 0, 0, 0.24);
+//   }
+// }
+
+// Target the link element that contains all the card classes
+.post.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
   &:hover {
-    transform: translateY(-8px) scale(1.03);
-    box-shadow: -2px 8px 40px -12px rgba(0, 0, 0, 0.24);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   }
 }
 
