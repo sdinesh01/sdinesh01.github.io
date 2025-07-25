@@ -1,0 +1,86 @@
+{%- if is_featured -%}
+  {%- assign card_style = card_style | append: ' featured-card shadow-lg' -%}
+{%- endif -%}
+
+{%- comment -%} Default Styles {%- endcomment -%}
+{%- assign card_style  = '' -%}
+{%- assign text_style  = 'text-themed' -%}
+{%- assign badge_style = 'badge-dark' -%}
+
+{%- comment -%} Update Styles {%- endcomment -%}
+{%- if project.style == 'fill' -%}
+  {%- assign card_style = project.color | prepend: 'bg-' -%}
+  {%- if project.color != 'light' -%}
+    {%- assign text_style  = 'text-white' -%}
+    {%- assign badge_style = 'badge-light text-' -%}
+    {%- assign badge_style = badge_style | append: project.color -%}
+  {%- endif -%}
+{%- else -%}
+  {%- assign card_style = project.color | prepend: 'border border-' -%}
+  {%- if project.color -%}
+    {%- assign badge_style =  project.color | prepend: 'badge-' -%}
+  {%- endif -%}
+{%- endif -%}
+
+{%- comment -%} Determine Post URL {%- endcomment -%}
+{%- if project.external_url -%}
+  {%- assign project_url = project.external_url -%}
+{%- else -%}
+  {%- assign project_url = project.url | relative_url -%}
+{%- endif -%}
+
+<div class="wow animated fadeIn" data-wow-delay=".15s">
+  <a href="{{ project_url }}" class="project card {{ card_style }} h-100 text-decoration-none" {%- if project.external_url and site.open_new_tab -%} target="_blank" {%- endif -%}>
+    {%- if project_img -%}
+    <img id="{{ project_id }}-img" class="card-img-top" src="{{ project_img }}" alt="{{ project_name }}" />
+    {%- endif -%}
+    <div class="card-body {{ text_style }}">
+      <h5 class="card-title">{{ project.title }}</h5>
+      <p class="card-text">
+        {% for tag in project.tags %}
+        <span class="badge {{ badge_style }}">{{ tag }}</span>
+        {% endfor %}
+      </p>
+      <p class="card-text">
+        {%- if project.description -%}
+        {{ project.description | truncatewords: 20, "<small><i>  read more...</i></small>" }}
+        {%- else -%}
+        {{ project.content | truncatewords: 20, "<small><i>  read more...</i></small>" }}
+        {%- endif -%}
+      </p>
+    </div>
+    <div class="card-footer {{ text_style }}">
+      {{ project.date | date_to_long_string }}
+    </div>
+  </a>
+</div>
+
+    
+<!--<div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">-->
+<!--   <div class="wow animated fadeIn" data-wow-delay=".15s">
+  <a href="{{ project_url }}" class="project card {{ card_style }}" {%- if project.external_url and site.open_new_tab -%} target="_blank" {%- endif -%}>
+    {%- if project_img -%}
+    <img id="{{ project_id }}-img" class="card-img-top" src="{{ project_img }}" alt="{{ project_name }}" />
+    {%- endif -%}
+    <div class="card-body {{ text_style }}">
+      <h5 class="card-title">{{ project.title }}</h5>
+      <p class="card-text">
+        {% for tag in project.tags %}
+        <span class="badge {{ badge_style }}">{{ tag }}</span>
+        {% endfor %}
+      </p>
+      <p class="card-text">
+        {%- if project.description -%}
+        {{ project.description | truncatewords: 25, "<small><i>  read more...</i></small>" }}
+        {%- else -%}
+        {{ project.content | truncatewords: 25, "<small><i>  read more...</i></small>" }}
+        {%- endif -%}
+      </p>
+    </div>
+    <div class="card-footer {{ text_style }}">
+      {{ project.date | date_to_long_string }}
+    </div>
+  </a>
+</div> -->
+
+
