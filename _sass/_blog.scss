@@ -29,7 +29,8 @@
 //   }
 // }
 
-.post.card:hover {
+// Test 3: Target the outer div instead
+.wow.animated.fadeIn:hover .card {
   background-color: red !important;
 }
 
