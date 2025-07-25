@@ -20,7 +20,6 @@
 //   }
 // }
 
-// Target the link element that contains all the card classes
 .post.card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   
@@ -55,10 +54,6 @@
 .featured-card {
   transform: scale(1.02);
   border: 2px solid #007bff !important;
-}
-
-.post.card.featured-card:hover {
-  transform: scale(1.02) translateY(-8px); 
 }
 
 /* Fix card heights and spacing */
