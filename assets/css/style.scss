@@ -2,4 +2,10 @@
  ---
 
  // @import "portfolYOU";
- @import "../_sass/blog";
+ // @import "../_sass/blog";
+
+// Import the remote theme's main stylesheet first
+@import "main";
+
+// Then, import your custom blog styles
+@import "../_sass/blog";
