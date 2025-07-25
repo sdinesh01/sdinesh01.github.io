@@ -14,7 +14,7 @@
     padding: 15px 35px;
   }
 
-  &:hover {
+  &:hover:not(.project) {
     transform: translateY(-8px) scale(1.03);
     box-shadow: -2px 8px 40px -12px rgba(0, 0, 0, 0.24);
   }
