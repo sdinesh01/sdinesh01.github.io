@@ -29,9 +29,14 @@
 //   }
 // }
 
-// Test 3: Target the outer div instead
-.wow.animated.fadeIn:hover .card {
-  background-color: red !important;
+.post.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+  
+  &:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+    background-color: inherit !important; // Preserve original background
+  }
 }
 
 .post-metadata {
